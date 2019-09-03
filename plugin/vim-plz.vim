@@ -16,7 +16,6 @@ function! QueryAffected(files) " {{{1
     let t = join(a:files)
     let cmd = "plz query affectedtargets " . t
     let l = systemlist(cmd)
-    echom join(l)
     return l
 endfunction
 " }}}    
